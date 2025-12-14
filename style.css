@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #222;
+  line-height: 1.4;
+  font-size: 16pt;
+}
+
+body {
+  margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #e4f1ff);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.nav {
+  background: #fffbfbaa;
+  backdrop-filter: blur(8px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff2f86;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+}
+
+.hero-img {
+  margin-top: 1.5rem;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px #0002;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 1.5rem;
+  background: #ff2f86;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #ff5aa3;
+}
+
+.content {
+  max-width: 1250px;
+  padding: 3rem 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.portrait {
+  width: 70%;
+  max-width: 350px;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px #0002;
+}
+
+.schedule-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.schedule-list li {
+  margin: 0.7rem 0;
+  padding-left: 0.8rem;
+  border-left: 4px solid #ff2f86;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.7;
+}
